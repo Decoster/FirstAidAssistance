@@ -1,5 +1,6 @@
 package com.vanhamme.jh.test1;
 // CK is the best... mouais... :/
+// et jean il est jalous mtn :/
 import android.animation.Animator;
 import android.animation.AnimatorListenerAdapter;
 import android.annotation.TargetApi;
