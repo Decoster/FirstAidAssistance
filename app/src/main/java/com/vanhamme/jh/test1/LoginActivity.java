@@ -1,5 +1,5 @@
 package com.vanhamme.jh.test1;
-
+// CK is the best... mouais... :/
 import android.animation.Animator;
 import android.animation.AnimatorListenerAdapter;
 import android.annotation.TargetApi;
