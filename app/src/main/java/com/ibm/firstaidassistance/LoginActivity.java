@@ -96,11 +96,11 @@ public class LoginActivity extends AppCompatActivity implements LoaderCallbacks<
                 attemptLogin();
                 if(attemptLogin())
                 {
-                    startActivity(new Intent(getApplicationContext(), callHelpActivity.class));
+                    onLoginSuccess();
                 }
                 else
                 {
-                    startActivity(new Intent(getApplicationContext(), LoginActivity.class));
+                    onLoginFail();
                 }
             }
         });
@@ -388,6 +388,17 @@ public class LoginActivity extends AppCompatActivity implements LoaderCallbacks<
         protected void onCancelled() {
             mAuthTask = null;
             showProgress(false);
+        }
+
+        private void onLoginSuccess()
+        {
+            startActivity(new Intent(getApplicationContext(), callHelpActivity.class));
+        }
+
+        private void onLoginFail()
+        {
+
+            startActivity(new Intent(getApplicationContext(), SettingActivity.class));
         }
     }
 }
